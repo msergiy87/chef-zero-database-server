@@ -1,0 +1,13 @@
+{
+  "name": "database-mongodb",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "Role for Database server",
+  "default_attributes": {  },
+  "run_list": [
+    "role[basic]",
+    "recipe[mongodb3::default]"
+  ], 
+  "env_run_lists": { },
+  "override_attributes": { }
+}

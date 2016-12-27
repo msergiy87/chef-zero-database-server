@@ -19,6 +19,7 @@ Vagrant.configure("2") do |config|
     chef.roles_path = "roles"
 
 #    chef.add_role "database-mysql"
-    chef.add_role "database-postgresql"
+#    chef.add_role "database-postgresql"
+    chef.add_role "database-mongodb"
   end
 end
