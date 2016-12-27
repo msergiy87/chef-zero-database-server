@@ -1,0 +1,19 @@
+{
+  "name": "database-postgresql",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "Role for Database server",
+  "default_attributes": {  },
+  "run_list": [
+    "role[basic]",
+    "recipe[postgresql::server]"
+  ], 
+  "env_run_lists": { },
+  "override_attributes": {
+    "postgresql": {
+      "password": {
+        "postgres": "md5843f5ada532819b59138b9e9cecbf76f"
+      }
+    }
+  }
+}

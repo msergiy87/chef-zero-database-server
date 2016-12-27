@@ -1,0 +1,13 @@
+{
+  "name": "database-mysql",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "Role for Database server",
+  "default_attributes": {  },
+  "run_list": [
+    "role[basic]",
+    "recipe[database_mysql]"
+  ], 
+  "env_run_lists": { },
+  "override_attributes": { }
+}
