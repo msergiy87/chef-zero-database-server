@@ -15,6 +15,9 @@ pass1234
 ```
 
 #### Mpngodb
+```
+vagrant@vagrant:~$ LC_ALL="en_US.UTF-8" mongo
+```
 
 # Overview
 

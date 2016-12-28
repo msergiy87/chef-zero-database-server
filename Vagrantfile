@@ -12,6 +12,9 @@ Vagrant.configure("2") do |config|
 
   config.vm.network :forwarded_port, guest: 80, host: 4567
 
+  config.berkshelf.enabled = true
+#  config.berkshelf.berksfile_path = "/Berksfile" 
+
   config.vm.provision "chef_zero" do |chef|
     chef.cookbooks_path = "cookbooks"
     chef.data_bags_path = "data_bags"
