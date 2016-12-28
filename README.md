@@ -15,7 +15,9 @@ pass1234
 ```
 
 #### Mpngodb
+
 ```
+vagrant plugin install vagrant-berkshelf
 vagrant@vagrant:~$ LC_ALL="en_US.UTF-8" mongo
 ```
 
